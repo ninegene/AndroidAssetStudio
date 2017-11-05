@@ -50,7 +50,8 @@
   },
   "private": true,
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "start": "gulp serve"
   },
   "dependencies": {
     "zipjs-browserify": "^1.0.1"
