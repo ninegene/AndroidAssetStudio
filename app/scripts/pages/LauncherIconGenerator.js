@@ -159,7 +159,7 @@ export class LauncherIconGenerator extends BaseGenerator {
 
       this.zipper.add({
         name: (density == 'web')
-            ? 'web_hi_res_512.png'
+            ? 'web_hi_res_2208.png'
             : `res/mipmap-${density}/${values.name}.png`,
         canvas: ctx.canvas
       });
@@ -173,7 +173,7 @@ export class LauncherIconGenerator extends BaseGenerator {
     let foreSrcCtx = values.foreground ? values.foreground.ctx : null;
     let mult = studio.Util.getMultBaseMdpi(density);
     if (density == 'web') {
-      mult = 512 / 48;
+      mult = 2208 / 48;
     }
 
     let iconSize = studio.Util.multRound(ICON_SIZE, mult);
